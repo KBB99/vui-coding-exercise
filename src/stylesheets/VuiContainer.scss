@@ -1,0 +1,67 @@
+@import "./Colors.scss";
+@import './Font.scss';
+
+.vui-container {
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  background-color: $blue-dark;
+  min-height: 100vh;
+
+  h5 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: white;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    color: white;
+  }
+}
+
+.vui-inner-container {
+  background-color: $blue-dark;
+  margin-top: 30px;
+  width: 420px;
+  min-height: 600px;
+  margin-bottom: 30px;
+}
+
+.select-product-inner-container {
+  background-color: $blue-dark;
+  margin-top: 30px;
+  width: 600px;
+  min-height: 600px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .vui-inner-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 100%;
+  }
+
+  .vui-container {
+    background-color: $blue-dark;
+  }
+
+  .select-product-inner-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 100%;
+  }
+}

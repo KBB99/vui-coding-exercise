@@ -1,0 +1,58 @@
+@import "./Colors.scss";
+@import "./Font.scss";
+
+.select-product-screen {
+  .list {
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    width: 80%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2), 1px 4px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    margin: auto;
+
+    .list-item {
+      padding-top: 5px;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: lightgray;
+      }
+      .title {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: $blue-main;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
+      .subtitle {
+        color: $dark-gray;
+        text-align: left;
+        margin-left: 10px;
+      }
+      .product-icon {
+        width: 120px;
+        height: 100%;
+        justify-self: center;
+        align-self: center;
+        margin: 10px;
+        max-width: 25%;
+      }
+      .list-divider {
+        border-top: 1px solid lightgray;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
